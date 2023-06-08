@@ -1,8 +1,7 @@
 <x-content-layout>
-  @include('components.trouveTaPerle')
   <main id="main">
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <div class="container mt-5" data-aos="fade-up">
         @include('components.filtre')
       </div>
     </section>

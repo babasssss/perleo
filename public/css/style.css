@@ -1821,3 +1821,55 @@ section {
   /* Ajoutez d'autres styles pour l'effet de clic si nécessaire */
 }
 
+
+.search{
+  /* Tag */
+  display: inline-block;
+  box-sizing: border-box;
+  /* Auto layout */
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+
+  margin-right: 5px;
+
+  width: auto;
+  height: 36px;
+
+  /* tertiary/300 */
+
+  border: 1px solid #5827B4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Tag-label */
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+
+  /* tertiary/300 */
+
+  color: #5827B4;
+  text-transform: uppercase;
+}
+
+
+.qr-code-layout{
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: center; /* Centrer horizontalement */
+  height: 100vh;
+}

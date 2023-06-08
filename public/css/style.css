@@ -1873,3 +1873,48 @@ section {
   justify-content: center; /* Centrer horizontalement */
   height: 100vh;
 }
+
+.filter-wrapper {
+  border: 2px solid #39B54A;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tab {
+  width: 50%;
+  padding: .5rem;
+  text-align: center;
+  font-weight: 600;
+  color: #21732C;
+  background-color: white;
+}
+.tab:hover{
+  color: #21732C;
+}
+
+.tab-active{
+  width: 50%;
+  padding: .5rem;
+  text-align: center;
+  font-weight: 600;
+  background-color: #39B54A;
+  color: white;
+}
+.tab-active:hover{
+  color: white;
+}
+
+.tab:first-child{
+  border-right: 2px solid #39B54A;
+}
+
+.date-input {
+  border: 2px solid #9894A0;
+  border-radius: 8px;
+  height: 40px;
+  width: 100%;
+  padding-left: 5px;
+}

@@ -11,35 +11,34 @@
     <ul>
       @if (Route::has('login'))
             @auth
-                <li><a class="nav-link scrollto" href="{{ url('/') }}">Accueil</a></li>
-                <li><a class="nav-link scrollto" href="#">Favoris</a></li>
-                <li><a class="nav-link scrollto" href="{{ url('/ma-carte') }}">Ma carte perleo</a></li>
-                <li class="dropdown"><a class="nav-link " ><span>Mon profil </span> <i class="bi bi-chevron-down"></i></a>
+                <li><a style="color:black;" class="nav-link scrollto" href="{{ url('/') }}">Accueil</a></li>
+                <li><a style="color:black;" class="nav-link scrollto" href="#">Favoris</a></li>
+                <li><a  style="color:black;"class="nav-link scrollto" href="{{ url('/ma-carte') }}">Ma carte perleo</a></li>
+                <li  style="color:black;"class="dropdown"><a class="nav-link " ><span>Mon profil </span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
                     <li>
-                    <li><a class="nav-link scrollto" href="#">Compte</a></li>
+                    <li><a  style="color:black;" class="nav-link scrollto" href="#">Compte</a></li>
                       <!-- Déconnecion -->
-                      <form method="POST" action="{{ route('logout') }}">
+                      <form style="color:black;" method="POST" action="{{ route('logout') }}">
                             @csrf
-                            <a class="nav-link scrollto" href="route('logout')" 
+                            <a style="color:black;" class="nav-link scrollto" href="route('logout')" 
                                onclick="event.preventDefault(); this.closest('form').submit();">
                               Déconnexion
                             </a>
                         </form>
                     </li>
                   </ul>
-                  <li><a class="nav-link scrollto" href="#">Mon abonnement</a></li>
+                  <li><a style="color:black;" class="nav-link scrollto" href="#">Mon abonnement</a></li>
                 </li>
             @else
-                <li><a class="nav-link scrollto" href="{{ route('login') }}">Connexion</a></li>
+                <li><a style="color:black;" class="nav-link scrollto" href="{{ route('login') }}">Connexion</a></li>
                 @if (Route::has('register'))
-                    <li><a class="nav-link scrollto" href="{{ route('register') }}">Inscription</a></li>
+                    <li><a style="color:black;" class="nav-link scrollto" href="{{ route('register') }}">Inscription</a></li>
                 @endif
-                <li class="dropdown"><a class="nav-link scrollto " >Perleo  <i class="bi bi-chevron-down"></i></a>
+                <li  class="dropdown"><a style="color:black;" class="nav-link scrollto " >Perleo  <i class="bi bi-chevron-down"></i></a>
                   <ul>
-                    <li><a class="nav-link scrollto" href="#about">Notre structure </a></li>
-                    <li><a class="nav-link scrollto" href="#about-boxes">L'équipe </a></li>
-                    <li><a href="#">... </a></li>
+                    <li><a style="color:black;" class="nav-link scrollto" href="#about">Notre structure </a></li>
+                    <li><a style="color:black;" class="nav-link scrollto" href="#about-boxes">L'équipe </a></li>
                   </ul>
                 </li>
             @endauth

@@ -14,10 +14,10 @@
                 <li><a style="color:black;" class="nav-link scrollto" href="{{ url('/') }}">Accueil</a></li>
                 <li><a style="color:black;" class="nav-link scrollto" href="#">Favoris</a></li>
                 <li><a  style="color:black;"class="nav-link scrollto" href="{{ url('/ma-carte') }}">Ma carte perleo</a></li>
-                <li  style="color:black;"class="dropdown"><a class="nav-link " ><span>Mon profil </span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a style="color:black;" class="nav-link " ><span>Mon profil</span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
                     <li>
-                    <li><a  style="color:black;" class="nav-link scrollto" href="#">Compte</a></li>
+                    <li><a  style="color:black;" class="nav-link scrollto" href="{{ url('/mon-compte  ') }}">Compte</a></li>
                       <!-- Déconnecion -->
                       <form style="color:black;" method="POST" action="{{ route('logout') }}">
                             @csrf

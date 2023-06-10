@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use QrCode;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class MaCarteController extends Controller
 {
-    public function index(){
-      
-      $data ='https://www.netflix.com/fr/';
-      $qrCode = QrCode::size(200)->generate($data);
-      // dd($qrCode);
+    public function index()
+    {
+        $data = 'https://www.netflix.com/fr/';
+        $qrCode = QrCode::size(200)->generate($data);
 
-      return view('MaCarte', compact('qrCode'));
+
+        return view('MaCarte', compact('qrCode'));
     }
 }

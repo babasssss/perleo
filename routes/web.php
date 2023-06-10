@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AimerController;
+use App\Http\Controllers\CompteController;
 use App\Http\Controllers\DasboardController;
 use App\Http\Controllers\EvenementController;
 use App\Http\Controllers\MaCarteController;
@@ -33,7 +34,9 @@ Route::get('/accueil', function () {
 Route::get('/',[DasboardController::class,'index'])->name('accueil');
 Route::get('/ma-carte',[MaCarteController::class,'index'])->middleware(['auth', 'verified'])->name('ma-carte');
 
-Route::get('/like/{id_article}/{id_user}',[AimerController::class,'index'])->middleware(['auth', 'verified'])->name('like');
+Route::get('/mon-compte',[CompteController::class,'index'])->middleware(['auth', 'verified'])->name('mon-compte');
+
+Route::get('/like/{id_article}',[AimerController::class,'index'])->middleware(['auth', 'verified'])->name('like');
 Route::get('/like_event/{code}/{id_user}',[AimerController::class,'indexEvent'])->middleware(['auth', 'verified'])->name('like_event');
 
 Route::get('/evenement/{nom}',[EvenementController::class,'index'])->middleware(['auth', 'verified'])->name('like');

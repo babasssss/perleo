@@ -27,7 +27,7 @@
           <img src="./img/articles/{{$article->depot}}" class="img-fluid" alt="Perleo">
           @if( Auth::user() )
             <a 
-              href="/like/{{$article->id_article}}/{{Auth::id()}}" 
+              href="/like/{{$article->id_article}}" 
               class="heart-icon 
                 <?php 
                   foreach($Aimers as $aimer){

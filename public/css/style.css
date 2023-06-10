@@ -1867,12 +1867,7 @@ section {
 }
 
 
-.qr-code-layout{
-  display: flex;
-  align-items: center; /* Centrer verticalement */
-  justify-content: center; /* Centrer horizontalement */
-  height: 100vh;
-}
+
 
 .filter-wrapper {
   border: 2px solid #39B54A;
@@ -1917,4 +1912,321 @@ section {
   height: 40px;
   width: 100%;
   padding-left: 5px;
+}
+
+
+/*
+ * Redirection
+ */
+
+.redirection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  position: absolute;
+  width: auto;
+  height: 24px;
+  left: 16px;
+  top: 112px;
+  cursor: pointer;
+}
+
+.link-redirection{
+  width: 54px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+
+.link-redirection:hover{
+  color: #000000;
+}
+
+
+
+/*
+ * Ma Carte Perleo
+ */
+.bg-qrCode{
+  position: relative;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  gap: 32px;
+  align-items: center; /* Centrer verticalement */
+  justify-content: center; /* Centrer horizontalement */
+  width: 358px;
+  height: 500px;
+  top: 100px;
+  background: #F0E8FF;
+  border-radius: 40px;
+}
+
+.base-layout{
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: center; /* Centrer horizontalement */
+  height: 100vh;
+}
+
+
+.info-qrCode{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 310px;
+  height: 148px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.user-photo-qrCode{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 10px;
+  isolation: isolate;
+
+  width: 120px;
+  height: 120px;
+
+  background: #FFFFFF;
+
+  border: 2px solid #3574F2;
+
+  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.info-user-qrCode{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  width: auto;
+  height: 95px;
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.info-user-titre-qrCode{
+  height: 23px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.info-user-inscrit-qrCode{
+  height: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3F3C45;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.info-user-abonnement-qrCode{
+  height: 20px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3F3C45;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.info-user-credit-qrCode{
+  width: auto;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #3F3C45;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+
+/*
+ * Titre PERLEO
+ */
+
+.bg-title-perleo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: 246px;
+  height: 32px;
+  left: 19px;
+  top: 168px;
+}
+
+.title-perleo{
+  margin-top: 5px; /* Ajustez la valeur selon vos besoins */
+  width: auto;
+  height: 32px;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/*
+ * Profil PERLEO
+ */
+
+.window-profile{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  left: 16px;
+  top: 218px;
+  background: #FFFFFF;
+
+}
+.tab-bar{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  width: auto;
+  height: 36px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (max-width: 767px) {
+  .custom-tab-bar {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: thin;
+  }
+}
+
+
+.tab{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 10px;
+
+  height: 36px;
+
+  border-bottom: 1px solid #39B54A;
+  border-radius: 0px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.tab-active{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 10px;
+
+  min-width: 123px;
+  height: 36px;
+
+  background: #39B54A;
+  border-radius: 10px 10px 0px 0px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.label-tab-active{
+
+  height: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #FFFFFF;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.label-tab-active:hover{
+  color: #FFFFFF;
+}
+
+.label-tab{
+  height: 20px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #39B54A;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.label-tab:hover{
+  color: #39B54A;
 }

@@ -17,7 +17,7 @@
                 <li  style="color:black;"class="dropdown"><a class="nav-link " ><span>Mon profil </span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
                     <li>
-                    <li><a  style="color:black;" class="nav-link scrollto" href="#">Compte</a></li>
+                    <li><a  style="color:black;" class="nav-link scrollto" href="{{ url('/mon-compte') }}">Compte</a></li>
                       <!-- Déconnecion -->
                       <form style="color:black;" method="POST" action="{{ route('logout') }}">
                             @csrf
